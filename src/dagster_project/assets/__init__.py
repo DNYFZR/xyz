@@ -10,6 +10,7 @@ DBT_PROJECT_PATH = file_relative_path(__file__, f"../../{PROJECT_NAME}")
 DBT_PROFILES = file_relative_path(__file__, f"../../{PROJECT_NAME}/config")
 
 # Data Config
+DB_PATH = file_relative_path(__file__, f"{DBT_PROJECT_PATH}/database/")
 DB_NAME = "dagster.duckdb"
 CUSTOMERS_RAW = "https://docs.dagster.io/assets/customers.csv"
 ORDERS_RAW = "https://docs.dagster.io/assets/orders.csv"

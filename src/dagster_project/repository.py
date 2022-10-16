@@ -19,5 +19,5 @@ def dbt_resource():
             "dbt" : dbt_cli_resource.configured(
                 { "project_dir" : DBT_PROJECT_PATH, "profiles_dir" : DBT_PROFILES, }),
             "io_manager" : duckdb_io_manager.configured(
-                { "duckdb_path" : os.path.join(DBT_PROJECT_PATH, "/database/", DB_NAME), }),
+                { "duckdb_path" : os.path.join(f"{DBT_PROJECT_PATH}/database", DB_NAME), }),
         })
