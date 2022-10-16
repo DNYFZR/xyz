@@ -6,5 +6,5 @@ dbt_project:
   outputs:
     local:
       type: duckdb
-      path: database/dagster.duckdb
+      path: "database/dagster.duckdb"
       schema: dbt_project
