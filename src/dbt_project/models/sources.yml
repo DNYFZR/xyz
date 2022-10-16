@@ -1,0 +1,8 @@
+# Table sources for dbt model
+version: 2
+
+sources:
+  - name: dbt_project
+    tables:
+      - name: orders_raw
+      - name: customers_raw

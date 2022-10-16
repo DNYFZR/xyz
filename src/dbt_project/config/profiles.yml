@@ -1,0 +1,10 @@
+# dbt project data warehouse profiles
+version: 2
+
+dbt_project:
+  target: local
+  outputs:
+    local:
+      type: duckdb
+      path: database/dagster.duckdb
+      schema: dbt_project
