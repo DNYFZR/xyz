@@ -1,28 +1,21 @@
-<h2 align="center"><b> 🧮 Dagstack 🧮 </b></h2>
+<h2 align="center"><b> 🧬 XYZ 🧬 </b></h2>
 
-<p align="center">
-Analytics Engineeirng Pipeline using Dagster, dbt & DuckDB
-</p><br>
+<p align="center">Data Pipeline using Dagster, dbt & DuckDB</p><br>
 
 <h3 align="center"><b> 🧱 Project Build </b></h3>
 
 ---
 
-In this project :
+Taking a minimalist approach to these tools, with the aim of developing a streamlined data processing system with minimal user input. Docker may also play a part in the final design.
 
-- Raw data will be fetched from a URL with Pandas
+In testing this project :
+
+- Raw data will be fetched with Pandas
 - Processed using dbt
 - Stored within DuckDB
 - Orchestration handled with Dagster
-- Outputs will be visaulized using Plotly
+- Outputs will be visaulized using Plotly or Streamlit (TBD)
 
-To run the workflow :
-
-````cli
-cd <dir containing workspace.yml>
-
-dagit
-````
 
 <br><h3 align="center"><b> 🌿 Dev Environment </b></h3>
 
@@ -51,18 +44,35 @@ Dependencies:
   pytest: 7.1.3 
 ````
 
-<br><h3 align="center"><b> 📚 References </b></h3>
+<br><h3 align="center"><b> 📚 Notes </b></h3>
 
-To clone the template project from Dagster :
+From the command line : 
 
-````cmd
+- To clone the template project from Dagster :
+
+````cli
 dagster project from-example --name dbt_dagster --example tutorial_dbt_dagster 
+````
+
+- To run the workflow :
+
+````cli
+cd <dir containing workspace.yml>
+
+dagit
+````
+
+- To terminate :
+
+````cli
+ctrl+c
 ````
 
 References :
 
-- dbt dev project: [jaffle shop](https://github.com/dbt-labs/jaffle_shop)
+- Dagster & Docker: [Deploying Dagster to Docker](https://docs.dagster.io/deployment/guides/docker)
 - Dagster Guide : [Dagster, dbt & DuckDB tutorial](https://docs.dagster.io/integrations/dbt/using-dbt-with-dagster)
+- dbt dev project: [jaffle shop](https://github.com/dbt-labs/jaffle_shop)
 
 ---
 ---
