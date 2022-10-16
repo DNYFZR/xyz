@@ -1,0 +1,67 @@
+
+version: 2
+
+models:
+  - name: Player_tourney
+    description: 'Test of ATP tour matches table'
+    columns:
+      - name: tourney_id
+        tests:
+          - not_null
+      - name: tourney_name
+        tests:
+          - not_null
+      - name: surface
+        tests:
+          - not_null
+      - name: draw_size
+        tests:
+          - not_null
+      - name: tourney_level
+        tests:
+          - not_null
+      - name: tourney_date
+        tests:
+          - not_null
+      - name: round
+        tests:
+          - not_null
+      - name: winner_id
+        tests:
+          - not_null
+      - name: winner_name
+        tests:
+          - not_null
+      - name: winner_age
+        tests:
+          - not_null
+      - name: loser_id
+        tests:
+          - not_null
+      - name: loser_name
+        tests:
+          - not_null
+      - name: loser_age
+        tests:
+          - not_null
+      - name: score
+        tests:
+          - not_null
+      - name: best_of
+        tests:
+          - not_null 
+      - name: minutes
+        tests:
+          - not_null
+      - name: winner_rank
+        tests:
+          - not_null
+      - name: winner_rank_points
+        tests:
+          - not_null
+      - name: loser_rank
+        tests:
+          - not_null
+      - name: loser_rank_points
+        tests:
+          - not_null
