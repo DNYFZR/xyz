@@ -1,2 +1,3 @@
+# Dagster workspace config
 load_from:
   - python_package: dagster_project
